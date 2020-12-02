@@ -35,6 +35,7 @@
             // 
             // dalykoFlowLayoutPanel
             // 
+            this.dalykoFlowLayoutPanel.AutoScroll = true;
             this.dalykoFlowLayoutPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dalykoFlowLayoutPanel.Location = new System.Drawing.Point(13, 13);
             this.dalykoFlowLayoutPanel.Name = "dalykoFlowLayoutPanel";
@@ -43,6 +44,7 @@
             // 
             // grupesFlowLayoutPanel
             // 
+            this.grupesFlowLayoutPanel.AutoScroll = true;
             this.grupesFlowLayoutPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grupesFlowLayoutPanel.Location = new System.Drawing.Point(329, 13);
             this.grupesFlowLayoutPanel.Name = "grupesFlowLayoutPanel";
@@ -51,6 +53,7 @@
             // 
             // studentoFlowLayoutPanel
             // 
+            this.studentoFlowLayoutPanel.AutoScroll = true;
             this.studentoFlowLayoutPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentoFlowLayoutPanel.Location = new System.Drawing.Point(524, 13);
             this.studentoFlowLayoutPanel.Name = "studentoFlowLayoutPanel";

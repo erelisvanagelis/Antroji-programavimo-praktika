@@ -45,9 +45,10 @@
             // 
             // pazymiaiFlowLayoutPanel
             // 
+            this.pazymiaiFlowLayoutPanel.AutoScroll = true;
             this.pazymiaiFlowLayoutPanel.Location = new System.Drawing.Point(376, 42);
             this.pazymiaiFlowLayoutPanel.Name = "pazymiaiFlowLayoutPanel";
-            this.pazymiaiFlowLayoutPanel.Size = new System.Drawing.Size(390, 396);
+            this.pazymiaiFlowLayoutPanel.Size = new System.Drawing.Size(430, 396);
             this.pazymiaiFlowLayoutPanel.TabIndex = 1;
             // 
             // tipaslabel
@@ -84,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 450);
+            this.ClientSize = new System.Drawing.Size(818, 450);
             this.Controls.Add(this.tipaslabel);
             this.Controls.Add(this.dataLabel);
             this.Controls.Add(this.pazimysLabel);

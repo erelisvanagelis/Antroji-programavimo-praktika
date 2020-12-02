@@ -155,9 +155,10 @@
             // 
             // pazymiaiFlowLayoutPanel
             // 
+            this.pazymiaiFlowLayoutPanel.AutoScroll = true;
             this.pazymiaiFlowLayoutPanel.Location = new System.Drawing.Point(375, 51);
             this.pazymiaiFlowLayoutPanel.Name = "pazymiaiFlowLayoutPanel";
-            this.pazymiaiFlowLayoutPanel.Size = new System.Drawing.Size(584, 386);
+            this.pazymiaiFlowLayoutPanel.Size = new System.Drawing.Size(617, 387);
             this.pazymiaiFlowLayoutPanel.TabIndex = 4;
             // 
             // label7
@@ -194,7 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 450);
+            this.ClientSize = new System.Drawing.Size(1004, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

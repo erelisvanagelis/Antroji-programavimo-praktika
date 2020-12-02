@@ -29,7 +29,7 @@ namespace Praktika
                 repoD = new DestytojoRepo();
                 List<Dalykas> dalykai = repoD.GetUzpildytiDalykai(repoA.GetPrisijunges());
 
-                int width = dalykoFlowLayoutPanel.Width - 5;
+                int width = dalykoFlowLayoutPanel.Width - 20;
 
                 foreach (Dalykas d in dalykai)
                 {
@@ -59,7 +59,7 @@ namespace Praktika
             Button button = (Button)sender;
             Dalykas d = (Dalykas)button.Tag;
             dalykoId = d.Id;
-            int width = grupesFlowLayoutPanel.Width - 5;
+            int width = grupesFlowLayoutPanel.Width - 20;
             foreach (Grupe g in d.Grupes)
             {
                 Button grupeButton = new Button
@@ -80,7 +80,7 @@ namespace Praktika
             studentoFlowLayoutPanel.Controls.Clear();
             Button button = (Button)sender;
             Grupe g = (Grupe)button.Tag;
-            int width = studentoFlowLayoutPanel.Width - 5;
+            int width = studentoFlowLayoutPanel.Width - 20;
             foreach (Studentas s in g.Studentai)
             {
                 Button studentasButton = new Button
