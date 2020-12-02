@@ -74,7 +74,6 @@ namespace Praktika
                 int id = Convert.ToInt32(pasirinktasDalykas.Split(new[] { "Id. " }, StringSplitOptions.None)[1]);
 
                 grupesDalykas g = grupesDalykai.Find(x => x.Grupe == pasirinktaGrupe && x.Dalykas == id);
-                repoA.DeleteVertinimai(g);
                 repoA.DeleteGrupesDalykas(g);
             }
             catch (Exception exc)
