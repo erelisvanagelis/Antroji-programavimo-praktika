@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B9132FE-0B93-4ED6-A70C-8CAE896E5F77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Praktika</RootNamespace>
+    <AssemblyName>Praktika</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admino.Designer.cs">
+      <DependentUpon>Admino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminoNaudotojai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminoNaudotojai.Designer.cs">
+      <DependentUpon>AdminoNaudotojai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AsmuoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AsmuoControl.Designer.cs">
+      <DependentUpon>AsmuoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DalykasControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DalykasControl.Designer.cs">
+      <DependentUpon>DalykasControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DalykoGrupesSusiejimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DalykoGrupesSusiejimas.Designer.cs">
+      <DependentUpon>DalykoGrupesSusiejimas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DestyojoDalykoSusiejimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DestyojoDalykoSusiejimas.Designer.cs">
+      <DependentUpon>DestyojoDalykoSusiejimas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DestytojoPazimysControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DestytojoPazimysControl.Designer.cs">
+      <DependentUpon>DestytojoPazimysControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DestytojoPazymiai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DestytojoPazymiai.Designer.cs">
+      <DependentUpon>DestytojoPazymiai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MokomiejiDalykai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MokomiejiDalykai.Designer.cs">
+      <DependentUpon>MokomiejiDalykai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repozitorija\AdminoRepo.cs" />
+    <Compile Include="Repozitorija\DestytojoRepo.cs" />
+    <Compile Include="Repozitorija\Repozitorija.cs" />
+    <Compile Include="StudentoGrupesSusiejimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentoGrupesSusiejimas.Designer.cs">
+      <DependentUpon>StudentoGrupesSusiejimas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipai\Asmuo.cs" />
+    <Compile Include="Destytojo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojo.Designer.cs">
+      <DependentUpon>Destytojo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PazimysPublicControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PazimysPublicControl.Designer.cs">
+      <DependentUpon>PazimysPublicControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repozitorija\StudentoRepo.cs" />
+    <Compile Include="Studento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studento.Designer.cs">
+      <DependentUpon>Studento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repozitorija\AsmuoRepo.cs" />
+    <Compile Include="Prisijungimas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prisijungimas.Designer.cs">
+      <DependentUpon>Prisijungimas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tipai\DalykoVertinimai.cs" />
+    <Compile Include="Tipai\Dalykas.cs" />
+    <Compile Include="Tipai\Grupe.cs" />
+    <Compile Include="Tipai\grupesDalykas.cs" />
+    <Compile Include="Tipai\Studentas.cs" />
+    <Compile Include="Tipai\Vertinimas.cs" />
+    <Compile Include="Controls\GrupeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GrupeControl.Designer.cs">
+      <DependentUpon>GrupeControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admino.resx">
+      <DependentUpon>Admino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminoNaudotojai.resx">
+      <DependentUpon>AdminoNaudotojai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AsmuoControl.resx">
+      <DependentUpon>AsmuoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DalykasControl.resx">
+      <DependentUpon>DalykasControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DalykoGrupesSusiejimas.resx">
+      <DependentUpon>DalykoGrupesSusiejimas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DestyojoDalykoSusiejimas.resx">
+      <DependentUpon>DestyojoDalykoSusiejimas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destytojo.resx">
+      <DependentUpon>Destytojo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DestytojoPazimysControl.resx">
+      <DependentUpon>DestytojoPazimysControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DestytojoPazymiai.resx">
+      <DependentUpon>DestytojoPazymiai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MokomiejiDalykai.resx">
+      <DependentUpon>MokomiejiDalykai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PazimysPublicControl.resx">
+      <DependentUpon>PazimysPublicControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prisijungimas.resx">
+      <DependentUpon>Prisijungimas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Studento.resx">
+      <DependentUpon>Studento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GrupeControl.resx">
+      <DependentUpon>GrupeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentoGrupesSusiejimas.resx">
+      <DependentUpon>StudentoGrupesSusiejimas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
